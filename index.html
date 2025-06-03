@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QuickRecharge Telecom App</title>
+</head>
+<body style="font-family: Arial; text-align:center; padding: 30px;">
+  <h2>QuickRecharge</h2>
+  <form>
+    <label for="number">Enter Mobile Number:</label><br><br>
+    <input type="text" id="number" name="number" required><br><br>
+
+    <label for="plan">Select Plan:</label><br><br>
+    <select id="plan" name="plan">
+      <option value="99">₹99 - 14 days</option>
+      <option value="199">₹199 - 28 days</option>
+      <option value="499">₹499 - 70 days</option>
+    </select><br><br>
+
+    <button type="button" onclick="showSuccess()">Recharge Now</button>
+  </form>
+
+  <p id="result" style="color: green; font-weight: bold;"></p>
+
+  <script>
+    function showSuccess() {
+      document.getElementById("result").innerText = "Recharge successful! Thank you!";
+    }
+  </script>
+</body>
+</html>
 
